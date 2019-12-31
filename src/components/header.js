@@ -8,6 +8,7 @@ const HeaderStyles = styled.header`
   display: flex;
   justify-content: space-between;
   padding: 12px 24px;
+  border-bottom: 1px solid #EBECF0;
 `
 
 const HeaderTitle = styled(Link)`
@@ -15,6 +16,7 @@ const HeaderTitle = styled(Link)`
   text-decoration: none;
   font-size: 20px;
 `
+
 const DropdownMenu = styled.div`
   position: absolute;
     top: 0;

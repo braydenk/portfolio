@@ -16,24 +16,32 @@ const HeaderNav = styled.nav`
 
 const DropdownMenu = styled.div`
   position: absolute;
-  top: 0;
+  top: 54px;
   right: 0;
-  width: 50%;
+  width: 100%;
   height: 100%;
   background: white;
 `
 
 const NavList = styled.div`
+  padding: 1rem;
+  height: 10rem;
+  justify-content: space-between;
   display: flex;
   flex-direction: column;
   align-items: center;
   align-items: flex-start;
 `
 const HeaderLink = styled(Link)`
-  color: #2f363d;
+  color: #000;
+  font-size: 16px;
   text-decoration: none;
-  font-weight: 100;
-  margin: 8px 0;
+  font-weight: 600;
+  margin: 1rem 2rem;
+
+  &:hover {
+    text-decoration: underline;
+  }
 `
 
 const CloseMenuContainer = styled.div`
@@ -87,17 +95,17 @@ const Header = () => {
         </Link>
 
         <MenuButton onClick={toggleMenu}>
-          <img src={menuIcon} alt="menu-button" />
+          <img src={isMenuVisible ? closeIcon : menuIcon} alt="menu-button" />
         </MenuButton>
       </HeaderNav>
 
       {isMenuVisible && (
         <DropdownMenu>
-          <CloseMenuContainer>
+          {/* <CloseMenuContainer>
             <MenuButton onClick={toggleMenu}>
               <img src={closeIcon} alt="close-button" />
             </MenuButton>
-          </CloseMenuContainer>
+          </CloseMenuContainer> */}
           <NavList>
             <HeaderLink to="/">Home</HeaderLink>
             <HeaderLink to="/">Projects</HeaderLink>

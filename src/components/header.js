@@ -101,15 +101,10 @@ const Header = () => {
 
       {isMenuVisible && (
         <DropdownMenu>
-          {/* <CloseMenuContainer>
-            <MenuButton onClick={toggleMenu}>
-              <img src={closeIcon} alt="close-button" />
-            </MenuButton>
-          </CloseMenuContainer> */}
           <NavList>
             <HeaderLink to="/">Home</HeaderLink>
-            <HeaderLink to="/">Projects</HeaderLink>
-            <HeaderLink to="/">About</HeaderLink>
+            <HeaderLink to="/projects">Projects</HeaderLink>
+            <HeaderLink to="/about">About</HeaderLink>
           </NavList>
         </DropdownMenu>
       )}

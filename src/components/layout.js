@@ -6,7 +6,16 @@ const Layout = ({ children, background }) => {
     <>
       <div style={{ height: "100vh", backgroundColor: background }}>
         <Header />
-        <main style={{ display: "flex", height: "100%" }}>{children}</main>
+        <main
+          style={{
+            display: "flex",
+            height: "100%",
+            flexDirection: "column",
+            margin: "1rem 5rem",
+          }}
+        >
+          {children}
+        </main>
       </div>
     </>
   )

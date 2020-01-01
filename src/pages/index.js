@@ -14,15 +14,6 @@ const SubText = styled.p`
   color: #000;
 `
 
-//   color: #000;
-//   text-decoration: none;
-//   font-size: 0.75rem;
-//   font-weight: 600;
-//   &:hover {
-//     border-bottom: 2px solid black;
-//   }
-// `
-
 const IndexPage = () => {
   return (
     <Layout background={"#fff"}>

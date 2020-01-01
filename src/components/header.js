@@ -10,7 +10,7 @@ const HeaderStyles = styled.header`
 
 const HeaderNav = styled.nav`
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 0.75rem;
 `
 
@@ -57,15 +57,46 @@ const Header = () => {
   return (
     <HeaderStyles>
       <HeaderNav>
-        <MenuButton>
-          <img src={menuIcon} onClick={toggleMenu} />
+        <Link to="/">
+          <svg
+            width="24px"
+            height="24px"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-labelledby="contrastIconTitle"
+            stroke="#000"
+            strokeWidth="2"
+            strokeLinecap="square"
+            strokeLinejoin="miter"
+            fill="none"
+            color="#000"
+          >
+            <title id="contrastIconTitle">Contrast control</title>
+            <rect
+              x="21"
+              y="3"
+              width="18"
+              height="18"
+              transform="rotate(90 21 3)"
+            />
+            <g strokeLinecap="round">
+              <path d="M21 3L3 21" /> <path d="M16 3L3 16" />
+              <path d="M11 3L3 11" /> <path d="M6 3L3 6" />
+            </g>
+          </svg>
+        </Link>
+
+        <MenuButton onClick={toggleMenu}>
+          <img src={menuIcon} alt="menu-button" />
         </MenuButton>
       </HeaderNav>
 
       {isMenuVisible && (
         <DropdownMenu>
           <CloseMenuContainer>
-            <img src={closeIcon} onClick={toggleMenu} />
+            <MenuButton onClick={toggleMenu}>
+              <img src={closeIcon} alt="close-button" />
+            </MenuButton>
           </CloseMenuContainer>
           <NavList>
             <HeaderLink to="/">Home</HeaderLink>

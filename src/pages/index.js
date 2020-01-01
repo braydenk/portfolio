@@ -1,14 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import { Link } from "gatsby"
 import styled from "styled-components"
-
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`
 
 const WelcomeText = styled.h1`
   font-size: 2rem;
@@ -22,27 +14,14 @@ const SubText = styled.p`
   color: #000;
 `
 
-const Links = styled.div`
-  margin-top: 1em;
-`
-//rgb(34,43,133)
-//fa615f
-const PageLink = styled(Link)`
-  color: #000;
-  text-decoration: none;
-  font-size: 0.75rem;
-  font-weight: 600;
-  &:hover {
-    border-bottom: 2px solid black;
-  }
-`
-
-const Circle = styled.div`
-  width: 50px;
-  height: 50px;
-  background: ${props => props.bg};
-  border-radius: 50%;
-`
+//   color: #000;
+//   text-decoration: none;
+//   font-size: 0.75rem;
+//   font-weight: 600;
+//   &:hover {
+//     border-bottom: 2px solid black;
+//   }
+// `
 
 const IndexPage = () => {
   return (

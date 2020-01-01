@@ -11,8 +11,8 @@ const AboutPage = () => (
   <Layout>
     <h1>About Me.</h1>
     <Text>
-      Hello! I'm Brayden, a graduate software engineer based in Melbourne,
-      Australia.
+      Hello! I'm Brayden, a recent CS graduate based in Melbourne, Australia. I
+      am passionate
     </Text>
   </Layout>
 )
